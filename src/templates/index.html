@@ -3,9 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
     <title>Timestamp API</title>
 </head>
 <body>
-    <h1>Hallo wie geht's dir?</h1>
+    <main class="text-center">
+        <h1 class="text-4xl font-bold mt-4">Hallo wie geht's dir?</h1>
+        <h2 class="text-3xl"><u>Timestamp API</u></h2>
+        <h3 class="text-2xl my-8">Example usage:</h3>
+        <a class="block text-blue-700" href="{{ url_for('turn_unix_date_code_to_utc', unix_code=1735016400) }}" target="_self" rel="noopener noreferrer">[project-url]/api/1735016400</a>
+        <a class="block text-blue-700" href="{{ url_for('turn_timestamp_to_unix_date_code', dt='2024-12-24') }}" target="_self" rel="noopener noreferrer">[project-url]/api/2024-12-24</a>
+        <h3 class="text-2xl my-8">Example output:</h3>
+        <p>{"unix": 1735016400, "utc": "2024-12-24 00:00:00 GMT"}</p>
+    </main>
+    <footer class="text-center">
+        <p class="mt-8">By <a class="text-green-700" href="https://github.com/codinsamueldev" target="_blank" rel="noopener noreferrer">@csamueldev</a></p>
+    </footer>
 </body>
 </html>
