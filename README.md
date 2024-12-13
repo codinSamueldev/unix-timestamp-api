@@ -21,5 +21,5 @@ feel free to do it,  ***just remember*** to keep the format _(YY-MM-DD)_
 
 ## What did I learn?
 I have strengthen my knowledge on the datetime module that offers Python, which built-in datetime methods can help us to turn datetime objects into unix code.   
-I have learned that FastAPI can work with templates (thanks to Jinja2Templates), which for a Django developer myself, it is quite essential working with templates.
-Get to know more Pytest and how easy is to parametrize tests with this testing framework. 
+I have learned that FastAPI can work with templates (thanks to Jinja2Templates), which for a Django developer myself, it is quite essential working with templates.      
+Get to know more Pytest and how easy is to parametrize tests with this testing framework.     
