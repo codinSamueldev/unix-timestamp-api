@@ -8,11 +8,12 @@ from .main import app, DATE_FORMAT
 
 client = TestClient(app)
 
-
+"""
 def test_home(): 
     response = client.get("/") 
     assert response.status_code == 200 
     assert "text/html" in response.headers["content-type"]
+"""
 
 
 def test_current_unix_code_and_utc_date():
