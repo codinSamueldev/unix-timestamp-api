@@ -17,8 +17,20 @@
         <a class="block text-blue-700" href="{{ url_for('turn_timestamp_to_unix_date_code', dt='2024-12-24') }}" target="_self" rel="noopener noreferrer">[project-url]/api/2024-12-24</a>
         <h3 class="text-2xl my-8">Example output:</h3>
         <p>{"unix": 1735016400, "utc": "2024-12-24 00:00:00 GMT"}</p>
+
+        <span class="flex items-center mt-8">
+            <span class="h-px flex-1 bg-black"></span>
+            <span class="shrink-0 px-6 text-2xl"><u>Want to know how old (in seconds) are you?</u></span>
+            <span class="h-px flex-1 bg-black"></span>
+        </span>
+
+        <form class="mt-4" action="/" method="post">
+            <label for="birthday">Birth date:</label> 
+            <input type="date" id="birthday" name="birthday"> 
+            <input class="group relative inline-block text-sm font-medium text-indigo-600 focus:outline-none focus:ring active:text-indigo-500" type="submit" value="Calculate">
+        </form>
     </main>
-    <footer class="text-center">
+    <footer class="text-center mt-16">
         <p class="mt-8">By <a class="text-green-700" href="https://github.com/codinsamueldev" target="_blank" rel="noopener noreferrer">@csamueldev</a></p>
         <p>Source code <a href="https://github.com/codinSamueldev/unix-timestamp-api" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a></p>
     </footer>
